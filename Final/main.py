@@ -70,7 +70,7 @@ def main():
     zoom = float(user_inputs[0]) if len(user_inputs) > 0 else 2.0
     radius = 28.6 / zoom  
     mass = 170 
-    damping_factor = 0.995  
+    damping_factor = 1
     random_offset_input = user_inputs[1].lower() if len(user_inputs) > 1 else "nein"
     lines_input = user_inputs[2].lower() if len(user_inputs) > 2 else "nein"
     use_random_offset = random_offset_input == "ja"
